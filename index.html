@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <h1>DojoWeather</h1>
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <a onclick="loadingWeather(this)" href="#">Burbank</a>
+                        <a onclick="loadingWeather(this)" href="#">Chicago</a>
+                        <a onclick="loadingWeather(this)" href="#">Dallas</a>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!--Cuerpo-->
+    <main>
+        <article>
+            <h2>San Jose</h2>
+            <div class="container-option-temp">
+                <p>Show temperature in</p>
+                <select class="option-temp" onchange="changeFormatTemp(this)">
+                    <option value="Celcius">°C</option>
+                    <option value="Fahrenheit">°F</option>
+                </select>
+            </div>
+
+        </article>
+        <section>
+            <div class="day today">
+                <h3>Today</h3>
+                <img class="img-temp" src="assets/images/some_rain.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="day-temp">
+                    <span class="temp-max">24°</span>
+                    <span class="temp-min">18°</span>
+                </div>
+            </div>
+            <div class="day tomorrow">
+                <h3>Tomorrow</h3>
+                <img class="img-temp" src="assets/images/some_sun.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="day-temp">
+                    <span class="temp-max">27°</span>
+                    <span class="temp-min">19°</span>
+                </div>
+            </div>
+            <div class="day friday">
+                <h3>Friday</h3>
+                <img class="img-temp" src="assets/images/some_clouds.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="day-temp">
+                    <span class="temp-max">21°</span>
+                    <span class="temp-min">16°</span>
+                </div>
+            </div>
+            <div class="day saturday">
+                <h3>Saturday</h3>
+                <img class="img-temp" src="assets/images/some_sun.png" alt="some_rain">
+                <p>some rain</p>
+                <div class="day-temp">
+                    <span class="temp-max">26°</span>
+                    <span class="temp-min">21°</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="cookie">
+                <div class="cookie-img">
+                    <img src="assets/images/cookie.png" alt="cookie">
+                </div>
+                <div class="cookie-messages">
+                    <h3>Stop! Cookie time</h3>
+                    <p>
+                        ‘We use cookies (sadly not the edible ones) to personalize
+                        content and ads, to provide social media features and to
+                        analyse our trafic. <a href="#">Read more.</a> 
+                    </p>
+                </div>
+                <button class="btn-cookie" onclick="acceptCookie()">I Accept</button>
+            </div>
+
+        </footer>
+    </main>
+    <script src="assets/index.js"></script>
+</body>
+
+</html>
